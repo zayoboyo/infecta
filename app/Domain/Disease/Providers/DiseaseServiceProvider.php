@@ -24,6 +24,6 @@ class DiseaseServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadMigrationsFrom(app_path('Domain\Disease\Migrations'));
+        $this->loadMigrationsFrom(app_path('Domain/Disease/Migrations'));
     }
 }
