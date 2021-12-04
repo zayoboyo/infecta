@@ -4,9 +4,20 @@ Demo: [Try out Infecta](https://infecta.appswing.net/)
 <p>Infecta is a web browser based game about solving RNA of viruses and creating mRNA based vaccine based on the RNA.</p>
 <p>Every five seconds, the game ticks and randomly discovers new diseases that are added to the main list.</p>
 <p>After new virus has been discovered, you need to click the green test tube icon to open the laboratory.</p>
-<p>In the laboratory, you need to click the button Solve RNA. Based on the complexity of the virus, it might take shorter or longer period of time to solve the RNA.</p>
-<p>After solving the RNA, you can leave the laboratory. You will notice a new red icon with syringe became available. After clicking on the red icon with syringe, you will eradicate the virus by making a new mRNA vaccine for the virus.</p>
-<p>The game is fully configurable via environment config variables. Parameter list:</p>
+<p>In the laboratory, you need to click the button Solve RNA. Based on the difficulty settings, it might take shorter or longer period of time to solve the RNA.</p>
+<p>After solving the RNA, you can leave the laboratory. You will notice a new red icon with syringe becomes available. After clicking on the red icon with syringe, you will eradicate the virus by making a new mRNA vaccine for the virus.</p>
+<p>The game difficulty is fully customizable via environment variables. Parameter list:</p>
+
+### Installation
+1. Clone the repository
+2. Run ```composer install```
+3. Run ```npm install```
+4. Rename the file ```.env.example``` to ```.env```
+5. Open the ```.env``` file and add database connection
+6. Run ```php artisan key:generate```
+8. Run ```php artisan migrate```
+9. Run ```npm run prod```
+10. Optional: Tweak the difficulty variables in the ```.env``` file as described below.
 
 | Variable             |                                      Description                                       |
 |----------------------|:--------------------------------------------------------------------------------------:|
