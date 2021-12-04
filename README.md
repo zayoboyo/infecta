@@ -1,6 +1,6 @@
-##Infecta
+## Infecta
 Demo: [Try out Infecta](https://infecta.appswing.net/)
-###Description
+### Description
 <p>Infecta is a web browser based game about solving RNA of viruses and creating mRNA based vaccine based on the RNA.</p>
 <p>Every five seconds, the game ticks and randomly discovers new diseases that are added to the main list.</p>
 <p>After new virus has been discovered, you need to click the green test tube icon to open the laboratory.</p>
