@@ -7,12 +7,13 @@ class DiseaseService implements IDiseaseService
 {
     private IDiseaseRepository $diseaseRepository;
 
-    function __construct(IDiseaseRepository  $diseaseRepository)
+    function __construct(IDiseaseRepository $diseaseRepository)
     {
         $this->diseaseRepository = $diseaseRepository;
     }
     /**
      * Generates random disease name.
+     *
      * @return string
      */
     public function randomDiseaseName() : string
@@ -28,6 +29,7 @@ class DiseaseService implements IDiseaseService
 
     /**
      * Generates random 12 characters long RNA sequence based on the ACGU nucleotides.
+     *
      * @return string
      */
     public function randomRNA() : string

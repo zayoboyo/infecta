@@ -25,7 +25,8 @@ class VaccineServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadMigrationsFrom('App\Domain\Vaccine\Migrations');
+        $this->loadMigrationsFrom(app_path('Domain\Vaccine\Migrations'));
+
         Vaccine::observe(VaccineObserver::class);
     }
 }

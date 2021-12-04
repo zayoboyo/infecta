@@ -8,7 +8,7 @@ use App\Domain\Disease\Collections\DiseaseCollection;
 use App\Domain\Vaccine\Models\Vaccine;
 
 /**
- * Every disease has unique RNA which needs to solved before mRNA vaccine can be developed.
+ * Every disease has unique RNA which needs to be solved before mRNA vaccine can be developed.
  * If RNA of the virus is solved, player will have the ability to make new mRNA vaccine.
  *
  * @package App\Domain\Disease\Models

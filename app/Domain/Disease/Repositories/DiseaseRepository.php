@@ -29,7 +29,6 @@ class DiseaseRepository implements IDiseaseRepository
         $disease->solved = false;
         $disease->has_vaccine = false;
         $disease->save();
-        $disease->refresh();
 
         return $disease;
     }
