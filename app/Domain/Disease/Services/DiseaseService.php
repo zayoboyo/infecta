@@ -57,8 +57,9 @@ class DiseaseService implements IDiseaseService
     {
         $diseaseSpawnChance = config('infecta.disease_spawn_chance');
         $maximumDiseases = config('infecta.maximum_diseases');
+        $unsolvedDiseaseCount = $this->diseaseRepository->findDiseases(['solved' => false])->count();
 
-        if($this->diseaseRepository->findDiseases(['solved' => false])->count() >= $maximumDiseases)
+        if($unsolvedDiseaseCount >= $maximumDiseases)
             return false;
 
         $chance = rand(0, 100);

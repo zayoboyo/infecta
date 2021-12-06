@@ -169,9 +169,7 @@ export default {
 
             await axios
             .put('/api/disease/' + parseInt(this.selectedDisease.disease_id), this.selectedDisease)
-            .then((response) => {
-                console.log("disease cured:");
-                console.log(response.data);
+            .then( () => {
                 this.$emit('onDiseaseCured');
             });
         }
