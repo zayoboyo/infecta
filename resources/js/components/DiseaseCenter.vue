@@ -8,7 +8,7 @@
                     top
                     color="warning"
                     v-model="newDiseaseDiscovered">
-                    <p>Beware! New disease has been discovered: <b>{{ diseases.slice(-1).name }}</b></p>
+                    <p>Beware! New disease has been discovered: <b>{{ diseases.slice(-1)[0].name }}</b></p>
                 </v-snackbar>
 
                 <!-- Snackbar to show after new vaccine has been developed -->
