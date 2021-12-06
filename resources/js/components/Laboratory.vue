@@ -3,7 +3,7 @@
         <v-dialog
             persistent
             v-model="laboratoryOpen"
-            width="1200">
+            fullscreen>
             <v-card>
                 <v-card-title class="text-h5 grey lighten-2">
                     Doc, please help us solve the missing RNA of the disease {{ referenceDisease.name }}!
