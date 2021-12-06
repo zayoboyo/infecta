@@ -6,7 +6,7 @@
 >
     <testsuites>
         <testsuite name="Unit">
-            <directory suffix="Test.php">App/Domain</directory>
+            <directory suffix="Test.php">app/Domain</directory>
         </testsuite>
     </testsuites>
     <coverage processUncoveredFiles="true">
